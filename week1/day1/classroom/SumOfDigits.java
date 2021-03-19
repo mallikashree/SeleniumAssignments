@@ -21,25 +21,28 @@ public class SumOfDigits {
 
 	public static void main(String[] args) {
 
-		// Declare your input number (int)
-
-		// Initialize an integer variable by name: sum
-
+		int number = 123;
+		int sum = 0;
+		int rem = 0;
 		// Use loop to calculate the sum: use while loop to set condition until the number goes greater than 0
-
-		// Within loop: get the remainder when done by 10 -> Tip: use mod %
-
-			// Print the remainder to confirm
-	
-			// Within loop: add that remainder to the sum
-	
-			// Print the sum to confirm
-	
-			// Within loop: get quotient of that number (tip: quotient should be same variable of loop condition)
-	
-			// Print the quotient to confirm
+		while (number >0) {
+			// Within loop: get the remainder when divide(mod) by 10 -> Tip: use mod %
+			rem= number%10;
+				// Print the remainder to confirm
+				System.out.println("rem:"+rem);
+				// Within loop: add that remainder to the sum
+				sum = sum+rem;
+				System.out.println("sum:"+sum);
+				// Within loop: get quotient of that number (tip: quotient should be same variable of loop condition)
+				number=number/10;				
+				// Print the quotient to confirm
+				System.out.println("number:"+number);
+			}
 		
 		// Outside the loop: print the final sum
+		System.out.println("sum of digits, "+sum );
+
+
 	}
 
 }
