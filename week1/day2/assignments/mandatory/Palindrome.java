@@ -15,5 +15,19 @@ public class Palindrome {
 	 
 	 * Hint: Use .equals or .equalsIgnoreCase when you compare a String 
 	 */
+String str = "madam";
+		String rev = " ";
+		//reverse a string
+		for (int i= str.length()-1; i>=0; i--)
+		{
+			
+			rev = rev+ str.charAt(i);//""+m
+		System.out.println(rev);
+		if(str.equals(rev));
+			
+		}
+			
+				System.out.println("It a palindrome");
 
+	}
 }
