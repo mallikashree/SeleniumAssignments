@@ -31,5 +31,20 @@ public class SumOfDigitsFromString {
 	 * c) Now covert char to int using Character.getNumericValue() and add it to sum
 	 * d) Now Print the value
 	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int sum=0;
+		String text = "Tes12Le79af65";
+		for(int i=0; i<text.length(); i++) {
+		    char temp = text.charAt(i);
+		    if (Character.isDigit(temp)) {
+		        int b = Integer.parseInt(String.valueOf(temp));
+		        sum=sum+b;
+		    }
+		}
+		System.out.println(sum);
+
+	}
 
 }
